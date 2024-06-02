@@ -1,0 +1,17 @@
+#hero {
+    height: calc( 100vh - 60px );
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero:first-child {
+}
+
+#hero h1 {
+    font-size: 18px;
+}
+
+#hero button,
+#hero button a {
+    width: 100%;
+}

@@ -47,6 +47,7 @@ button {
 }
 
 button > a {
+    display: block;
     color: var(--text);
     background: var(--color-2);
     border: 2px var(--bg-2) solid;
@@ -65,14 +66,43 @@ header, main, section, footer {
 }
 
 header {
+    background: var(--bg-2);
     position: fixed;
     top: 0;
     left: 0;
-    height: 50px;
+    height: 60px;
     padding: 10px;
     display: flex;
-    flex-flow: center row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    user-select: none;
+    padding: 0 5px;
+    background: var(--color-1);
+}
+
+.navbar-input {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    padding: 5px;
+}
+
+.navbar-button {
+    display: none;
+}
+
+main {
+    margin-top: 60px;
 }
 
 footer {
