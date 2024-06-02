@@ -17,7 +17,65 @@ body {
     font-family: var(--font-1);
 }
 
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: var(--color-1);
+    padding: 1px;
+    border-radius: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-size: 18px;
+    appearance: none;
+    border: none;
+    background: none;
+}
+
+button > a {
+    color: var(--text);
+    background: var(--color-2);
+    border: 2px var(--bg-2) solid;
+    transition: .5s background, .7s color;
+}
+
+button:hover > a {
+    text-decoration: none;
+    color: var(--color-1);
+    background: var(--bg-2);
+}
+
 header, main, section, footer {
     width: 100%;
     background: var(--bg-1);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    flex-flow: center row;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 0 50px;
+    background: var(--bg-2);
 }
