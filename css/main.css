@@ -1,0 +1,23 @@
+
+/* VARIABLES */
+:root {
+    --bg-1: #333;
+    --bg-2: #0A0A0A;
+    --text: #EEE;
+    --color-1: #1C4;
+    --color-2: #228;
+    --font-1: "Noto Sans", Verdana, sans-serif;
+    --font-2: "Ubuntu Mono", "Courier New", monospace;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    color: var(--text);
+    font-family: var(--font-1);
+}
+
+header, main, section, footer {
+    width: 100%;
+    background: var(--bg-1);
+}
