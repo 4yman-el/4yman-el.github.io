@@ -78,34 +78,41 @@ header {
 }
 
 .logo {
+    flex-shrink: 0;
     cursor: pointer;
     user-select: none;
     padding: 0 5px;
     background: var(--color-1);
 }
 
-.navbar-input {
-    display: none;
-}
-
 nav ul {
-    list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav li {
-    padding: 5px;
-}
-
-.navbar-button {
-    display: none;
+    padding: 3px 5px;
 }
 
 main {
     margin-top: 60px;
 }
 
+@media (max-width: 470px) {
+    header {
+        height: 50px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+}
+
 footer {
-    padding: 0 50px;
+    padding: 5% 50px;
     background: var(--bg-2);
 }
