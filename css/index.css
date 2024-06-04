@@ -107,11 +107,13 @@ footer ul {
     }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 800px) {
     #contact {
         padding: 5%;
     }
+}
 
+@media (max-width: 500px) {
     #contact ul li{
         width: 80%;
         margin: 3% 5%;
