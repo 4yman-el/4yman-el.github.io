@@ -1,8 +1,8 @@
 
 /* VARIABLES */
 :root {
-    --bg-1: #333;
-    --bg-2: #0A0A0A;
+    --bg-1: #111;
+    --bg-2: #000;
     --text: #EEE;
     --color-1: #1C4;
     --color-2: #228;
@@ -10,18 +10,13 @@
     --font-2: "Ubuntu Mono", "Courier New", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-1: #101010;
-        --bg-2: #000;
-    }
-}
-
 @media (prefers-color-scheme: light) {
     :root {
         --bg-1: #AAA;
         --bg-2: #EEE;
         --text: #0A0A0A;
+        --color-1: #228;
+        --color-2: #1C4;
     }
 }
 
@@ -84,7 +79,9 @@ header, main, section, footer {
 
 header {
     background: var(--bg-2);
+    box-shadow: 0px 1px var(--bg-1);
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     height: 60px;
@@ -100,6 +97,7 @@ header {
     user-select: none;
     padding: 0 5px;
     background: var(--color-1);
+    color: var(--bg-2);
     border-radius: 4px;
 }
 
