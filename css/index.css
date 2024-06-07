@@ -1,8 +1,12 @@
+
+
 #hero {
-    height: calc( 100vh - 60px );
+    height: calc(100vh - 60px);
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem;
 }
 
 #hero div:last-child {
@@ -12,36 +16,40 @@
 }
 
 #hero h1 {
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 
 #hero h2 {
-    font-size: 60px;
+    font-size: 2rem;
 }
 
 #hero button {
-    width: 60%;
-    margin: 10% 0 0 30%;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem 0 0 0;
 }
 
 #hero button a {
-    padding: 10% 0;
+    padding: 0.5rem 1rem;
 }
 
 #hero img {
-    max-width: 100vw;
-    aspect-ratio: 1/1;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-top: 1rem;
+    border-radius: 5%;
 }
 
 @media (prefers-color-scheme: light) {
-    #hero img {
-        filter: invert(1);
-        transition: .4s filter;
-    }
+	#hero img {
+		filter: invert(1);
+		transition: .5s filter;
+	}
 
-    #hero img:hover {
-        filter: none;
-    }
+	#hero img:hover {
+		filter: none;
+	}
 }
 
 #about {
@@ -50,97 +58,78 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    text-align: center;
 }
 
 #contact {
-    padding: 10%;
+    padding: 2rem;
+    background: var(--bg-1);
 }
 
 #contact ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    list-style: none;
 }
 
 #contact ul li {
-    margin: 10% 5%;
+    margin: 1rem;
+    width: calc(50% - 2rem);
 }
 
 #contact button a {
-    font-size: 32px;
-    font-weight: bolder;
-    padding: 10% 0;
-}
-
-#contact ul li {
-    width: 40%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 
 #contact button,
-#contact button a{
+#contact button a {
     width: 100%;
+    display: block;
 }
 
 footer ul {
-    margin-bottom: 3%;
     display: flex;
-    justify-content: space-around;
-}
-
-@media (max-width: 470px) {
-    #hero {
-        height: calc( 100vh - 50px );
-    }
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
 }
 
 @media (max-width: 1024px) {
     #hero h2 {
-        font-size: 30px;
-    }
-
-    #hero button {
-        width: 100%;
-        margin: 10% 0 0 30%;
+        font-size: 1.5rem;
     }
 
     #hero button a {
-        padding: 5px;
+        padding: 0.5rem;
     }
 }
 
 @media (max-width: 860px) {
     #hero {
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column-reverse;
     }
 
     #hero div:first-child {
-        padding: 5%;
-    }
-
-    #hero button {
-        margin: 10% 0 0 0;
-    }
-}
-
-@media (min-width: 800px) {
-    #contact {
-        padding: 5%;
+        padding: 1rem;
     }
 }
 
 @media (max-width: 500px) {
-    #contact ul li{
+    #contact ul li {
         width: 80%;
-        margin: 3% 5%;
     }
 
     #contact ul li:first-child {
-        margin: 8% 5%;
+        margin-top: 2rem;
     }
 
     #contact button a {
-        padding: 5% 0;
+        padding: 0.5rem;
     }
 }
