@@ -54,12 +54,20 @@
 
 #about {
     min-height: 100vh;
+    padding: 2rem;
     background: var(--bg-2);
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
     text-align: center;
+}
+
+#about div {
+    background-color: var(--bg-1);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 4px;
 }
 
 #contact {
