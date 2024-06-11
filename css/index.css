@@ -4,9 +4,12 @@
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
+}
+
+#hero div:first-child {
+    margin: .5rem;
 }
 
 #hero div:last-child {
@@ -16,7 +19,7 @@
 }
 
 #hero h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #hero h2 {
@@ -25,16 +28,14 @@
 
 #hero button {
     width: 100%;
-    padding: 0.5rem;
-    margin: 1rem 0 0 0;
 }
 
 #hero button a {
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
 }
 
 #hero img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     aspect-ratio: 1 / 1;
     margin-top: 1rem;
@@ -90,7 +91,7 @@
 #contact button a {
     font-size: 1rem;
     font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: 1rem .5rem;
 }
 
 #contact button,
@@ -114,17 +115,13 @@ footer ul {
     }
 
     #hero button a {
-        padding: 0.5rem;
+        padding: .5rem;
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 700px) {
     #hero {
         flex-direction: column-reverse;
-    }
-
-    #hero div:first-child {
-        padding: 1rem;
     }
 }
 
@@ -138,6 +135,13 @@ footer ul {
     }
 
     #contact button a {
-        padding: 0.5rem;
+        padding: .5rem;
+    }
+}
+
+
+@media (max-width: 470px) {
+    #hero {
+        height: calc( 100vh - 50px );
     }
 }
