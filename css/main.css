@@ -1,7 +1,7 @@
 /* VARIABLES */
 :root {
-    --bg-1: #101010;
-    --bg-2: #000;
+    --bg-1: #000;
+    --bg-2: #111;
     --text: #EEE;
     --color-1: #1C4;
     --color-2: #228;
@@ -14,8 +14,8 @@
         --bg-1: #FAFAFA;
         --bg-2: #FFFFFF;
         --text: #0A0A0A;
-        --color-1: #007BFF;
-        --color-2: #00FF7B;
+        --color-1: #11e;
+        --color-2: #0f6;
     }
 }
 
@@ -23,7 +23,7 @@ body {
     min-height: 100vh;
     width: 100%;
     color: var(--text);
-    background: var(--bg-1);
+    background: var(--bg-2);
     font-family: var(--font-1);
 }
 
@@ -64,7 +64,7 @@ button > a {
     display: block;
     color: var(--text);
     background: var(--color-2);
-    border: 2px solid var(--bg-2);
+    border: 2px solid var(--bg-1);
     padding: 0.5rem 1rem;
     transition: background 0.5s, color 0.5s, border 0.5s;
 }
@@ -72,17 +72,17 @@ button > a {
 button:hover > a {
     color: var(--color-1);
     border: 2px solid var(--color-1);
-    background: var(--bg-2);
+    background: var(--bg-1);
 }
 
 header, main, section, footer {
     width: 100%;
-    background: var(--bg-1);
+    background: var(--bg-2);
 }
 
 header {
-    background: var(--bg-2);
-    border-bottom: var(--bg-1) 2px solid;
+    background: var(--bg-1);
+    border-bottom: var(--bg-2) 2px solid;
     position: fixed;
     top: 0;
     left: 0;
@@ -134,7 +134,7 @@ main {
 
 footer {
     padding: 1rem;
-    background: var(--bg-2);
+    background: var(--bg-1);
     color: var(--text);
     text-align: center;
 }
