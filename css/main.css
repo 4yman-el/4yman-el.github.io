@@ -21,7 +21,6 @@
 
 body {
     min-height: 100vh;
-    width: 100%;
     color: var(--text);
     background: var(--bg-2);
     font-family: var(--font-1);
@@ -82,7 +81,7 @@ header, main, section, footer {
 
 header {
     background: var(--bg-1);
-    border-bottom: var(--bg-2) 2px solid;
+    border-bottom: var(--bg-2) 1px solid;
     position: fixed;
     top: 0;
     left: 0;
