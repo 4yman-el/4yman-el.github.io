@@ -35,6 +35,7 @@
 }
 
 #hero img {
+    min-width: 40vw;
     max-width: 80%;
     height: auto;
     aspect-ratio: 1 / 1;
