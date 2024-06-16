@@ -43,7 +43,7 @@
 @media (prefers-color-scheme: light) {
 	#hero img {
 		filter: invert(1);
-		transition: .5s filter;
+		transition: .2s filter linear;
 	}
 
 	#hero img:hover {
@@ -52,18 +52,20 @@
 }
 
 #about {
-    min-height: 60vh;
-    padding: 2rem;
+    padding: 1rem;
     background: var(--bg-1);
+}
+
+#about ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0 2rem;
+    gap: 1rem;
     text-align: center;
 }
 
-#about div {
+#about li {
     background-color: var(--bg-2);
     padding: 1.5rem;
     border-radius: 4px;
