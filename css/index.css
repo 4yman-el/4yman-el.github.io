@@ -57,20 +57,20 @@
     background: var(--bg-1);
 }
 
-#about p {
+.link-header {
     font-size: 1.5rem;
     padding-left: .5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 2rem;
 }
 
-#about ul {
+.link-grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     text-align: center;
 }
 
-#about li {
+.link-grid-item {
     background-color: var(--bg-2);
     padding: 1.5rem;
     border-radius: 4px;
@@ -81,7 +81,7 @@
     background: var(--bg-2);
 }
 
-#contact ul {
+.link-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -90,21 +90,13 @@
     margin-top: 2rem;
 }
 
-#contact ul li {
+.link-flex-item {
     width: calc(40% - 2rem);
-}
-
-#contact button a {
     font-size: 1rem;
     font-weight: bold;
     padding: 1rem .5rem;
 }
 
-#contact button,
-#contact button a {
-    width: 100%;
-    display: block;
-}
 
 @media (max-width: 1024px) {
     #hero h3 {
