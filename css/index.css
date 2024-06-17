@@ -106,15 +106,6 @@
     display: block;
 }
 
-footer ul {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1rem 0;
-}
-
 @media (max-width: 1024px) {
     #hero h3 {
         font-size: 1.5rem;
