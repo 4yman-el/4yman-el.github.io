@@ -108,7 +108,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     #hero {
         justify-content: start;
         flex-direction: column-reverse;
