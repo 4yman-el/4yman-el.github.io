@@ -1,5 +1,3 @@
-
-
 #hero {
     height: calc(100vh - 60px);
     display: flex;
@@ -71,6 +69,7 @@
 }
 
 .link-grid-item {
+    display: block;
     background-color: var(--bg-2);
     padding: 1.5rem;
     border-radius: 4px;
