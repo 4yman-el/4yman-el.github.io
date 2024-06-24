@@ -22,7 +22,11 @@
 }
 
 #hero button {
-    width: 100%;
+    width: 60%;
+    position: relative;
+    left: 40%;
+    top: 1rem;
+    min-width: 200px;
 }
 
 #hero button a {
