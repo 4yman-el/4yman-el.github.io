@@ -2,15 +2,13 @@
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 2rem;
     align-items: center;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 5%;
 }
 
 .present-h1 {
@@ -18,11 +16,12 @@
 }
 
 .present-h3 {
-    font-size: 2rem;
+    margin: .5rem 0;
+    font-size: 2.5rem;
 }
 
 .present-btn {
-    width: 60%;
+    width: 50%;
     position: relative;
     left: 40%;
     top: 1rem;
@@ -50,7 +49,7 @@
 	}
 }
 
-#about {
+.about {
     min-height: 60vh;
     padding: 1rem;
     background: var(--bg-1);
@@ -80,7 +79,7 @@
     background-color: #9991;
 }
 
-#contact {
+.contact {
     padding: 2rem;
     background: var(--bg-2);
 }
@@ -90,20 +89,19 @@
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    gap: 1rem;
+    gap: 10%;
     margin-top: 2rem;
 }
 
 .link-flex-item {
     width: calc(40% - 2rem);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    padding: 1rem .5rem;
     max-width: 400px;
 }
 
-.link-flex-item.button {
-    padding: 1rem 2rem;
+.link-flex-item .button {
+    padding: 1rem 1.5rem;
 }
 
 
@@ -135,15 +133,15 @@
 }
 
 @media (max-width: 500px) {
-    #contact ul li {
+    .contact ul li {
         width: 80%;
     }
 
-    #contact ul li:first-child {
+    .contact ul li:first-child {
         margin-top: 2rem;
     }
 
-    #contact button a {
+    .contact button a {
         padding: .5rem;
     }
 }
