@@ -11,8 +11,8 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --bg-1: #EEE;
-        --bg-2: #FFF;
+        --bg-1: #CCC;
+        --bg-2: #EEE;
         --text: #111;
         --color-1: #11e;
         --color-2: #0f6;

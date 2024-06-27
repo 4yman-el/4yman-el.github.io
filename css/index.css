@@ -79,6 +79,10 @@
     border-radius: 4px;
 }
 
+.link-grid-item:last-child {
+    background-color: #9991;
+}
+
 #contact {
     padding: 2rem;
     background: var(--bg-2);
