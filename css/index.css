@@ -7,33 +7,30 @@
     align-items: center;
 }
 
-#hero div:last-child {
+.image-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#hero h1 {
+.present-h1 {
     font-size: 1rem;
 }
 
-#hero h3 {
+.present-h3 {
     font-size: 2rem;
 }
 
-#hero button {
+.present-btn {
     width: 60%;
     position: relative;
     left: 40%;
     top: 1rem;
     min-width: 200px;
-}
-
-#hero button a {
     padding: .5rem 1rem;
 }
 
-#hero img {
+.image-container img {
     min-width: 40vw;
     max-width: 80%;
     height: auto;
@@ -43,12 +40,12 @@
 }
 
 @media (prefers-color-scheme: light) {
-	#hero img {
+	.image-container img {
 		filter: invert(1);
 		transition: .2s filter linear;
 	}
 
-	#hero img:hover {
+	.image-container:hover img {
 		filter: none;
 	}
 }
@@ -111,11 +108,11 @@
 
 
 @media (max-width: 1024px) {
-    #hero h3 {
+    .present-h3 {
         font-size: 1.5rem;
     }
 
-    #hero button a {
+    .present-btn {
         padding: .5rem;
     }
 }
@@ -124,6 +121,16 @@
     #hero {
         justify-content: start;
         flex-direction: column-reverse;
+    }
+
+    .present-container {
+        text-align: center;
+    }
+
+    .present-btn {
+        left: 0;
+        top: 1.3rem;
+        padding: .7rem;
     }
 }
 
