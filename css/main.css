@@ -1,23 +1,73 @@
-
 /* VARIABLES */
 :root {
-    --bg-1: #333;
-    --bg-2: #0A0A0A;
-    --text: #EEE;
-    --color-1: #1C4;
-    --color-2: #228;
-    --font-1: "Noto Sans", Verdana, sans-serif;
+    --bg-1: #000;
+    --bg-2: #111;
+    --bg-3: #1F1F1F;
+    --fg: #EEE;
+    --fg-1: #AAA;
+    --fg-2: #777;
+    --color-1: #787;
+    --color-2: #445;
+    --color-3: #886;
+    --font-1: "Noto Sans", Roboto, sans-serif;
     --font-2: "Ubuntu Mono", "Courier New", monospace;
 }
 
+@media (prefers-contrast: more) {
+    :root {
+        --fg: #EEE;
+        --fg-1: #CCC;
+        --fg-2: #AAA;
+        --color-1: #797;
+        --color-2: #668;
+        --color-3: #BB9;
+    }
+}
+
 body {
-    min-height: 100vh;
-    width: 100vw;
-    color: var(--text);
+    color: var(--fg);
+    background: var(--bg-1);
     font-family: var(--font-1);
 }
 
-header, main, section, footer {
-    width: 100%;
-    background: var(--bg-1);
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    color: var(--color-1);
+    padding: 0.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active{
+    color: var(--color-3);
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--fg-2);
+    border-radius: 2px;
+    cursor: ns-resize;
 }
