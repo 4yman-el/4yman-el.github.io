@@ -1,0 +1,56 @@
+/* VARIABLES */
+:root {
+    --bg-1: #000;
+    --bg-2: #111;
+    --text: #EEE;
+    --color-1: #1C4;
+    --color-2: #228;
+    --font-1: "Noto Sans", Verdana, sans-serif;
+    --font-2: "Ubuntu Mono", "Courier New", monospace;
+}
+
+/* FIXES */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: #FFF4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* CSS */
+
+body {
+    color: var(--text);
+    background: var(--bg-1);
+    font-family: var(--font-1);
+}
+
+a {
+    color: var(--color-1);
+}
+
+button {
+    padding: 3px;
+    background: var(--bg-1);
+    border: 1px solid var(--color-1);
+    border-radius: 2px;
+    color: var(--text);
+}
+
+button:hover {
+    border-color: var(--color-2);
+    outline: 1px solid var(--color-1);
+}
+
+button:active {
+    background: var(--bg-2);
+    color: var(--color-1);
+}
