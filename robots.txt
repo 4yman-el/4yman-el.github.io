@@ -1,0 +1,8 @@
+User-agent: Googlebot-News
+User-agent: baiduspider-news
+User-agent: bingbot
+User-agent: Slurp
+Disallow: /
+
+User-agent: *
+Crawl-delay: 2

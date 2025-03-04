@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my website. Visit it if you want.">
+
+    <meta property="og:title"   content="4yman">
+    <meta property="og:type"    content="profile">
+    <meta property="og:url"     content="https://4yman-0.github.io">
+    <meta property="og:image"   content="/img/pfp.webp">
+    <meta property="og:image:width"  content="474">
+    <meta property="og:image:height" content="474">
+
+    <link rel="stylesheet" href="css/fixes.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon favicon" href="img/favicon.png">
+
+    <title>4yman</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">4yman</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#hero">Hello</a></li>
+                <li class="nav-list-item"><a href="#things">Things</a></li>
+                <li class="nav-list-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero" id="hero">
+            <div class="hero-img-container">
+                <img
+                 class="hero-img"
+                 src="img/pfp.webp"
+                 width="474"
+                 height="474"
+                 alt="Profile picture">
+            </div>
+            <div class="hero-txt">
+                <h2 class="hero-txt__h2">Hello...</h3>
+                <p class="hero-txt__p">
+                    I use a PC and I have no idea what I am doing...
+                </p>
+                <a class="button button--focus hero-txt__btn" href="#things">Things</a>
+            </div>
+        </section>
+        <section class="things" id="things">
+            <h2 class="things__txt">Things:</h2>
+            <ul class="links-grid">
+                <li class="link-grid-item">
+                    <a href="archive/webgames">few (two) games</a>
+                </li>
+                <li class="link-grid-item">
+                    <a href="archive/verbose-webpage">browser information collector</a>
+                </li>
+                <li class="link-grid-item">
+                    <a href="archive/foobar.ai">fake AI website</a>
+                </li>
+                <li class="link-grid-item">
+                    <p>And nothing else important...</p>
+                </li>
+            </ul>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="contact__txt">Contact me:</h2>
+            <ul class="links-flex">
+                <li class="link-flex">
+                    <a class="button button--focus link-flex__btn"
+						href="https://www.github.com/4yman-0">
+                        <img class="link-flex__icon" src="img/gh.svg" alt="icon">
+                        Github
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <pre class="footer__copy">&copy; 2024 4yman, All Rights Reserved.</pre>
+        <noscript class="footer__no-js">
+            <pre>If you're reading this, your browser does not support JavaScript.</pre>
+        </noscript>
+        <!-- If you're reading this, you use DevTools -->
+    </footer>
+
+    <script>
+        // Go back to the beginning of the page.
+        history.scrollRestoration = "manual";
+    </script>
+</body>
+</html>

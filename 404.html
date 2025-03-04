@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/fixes.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/404.css">
+
+    <link rel="shortcut icon favicon" href="/img/favicon.png">
+    <title>four-oh-four</title>
+</head>
+<body>
+    <header class="header">
+        <h1>WRONG LINK</h1>
+    </header>
+
+    <main class="main">
+		<a href="#" class="button go-back" id="go-back">
+			Go back
+		</a>
+		or else...
+	</main>
+
+    <footer class="footer">
+        <pre>&copy; 2024 4yman, All Rights Reserved.</pre>
+        <!-- If you're reading this. I think you use DevTools -->
+    </footer>
+
+    <script>
+        // Go back to beginning of the page
+        history.scrollRestoration = "manual";
+
+        // Yes, I will account for compatibility
+        var goBack = document.getElementById('go-back');
+        goBack.onclick = function (){
+        	history.back();
+        	window.close();
+        }
+    </script>
+</body>
+</html>

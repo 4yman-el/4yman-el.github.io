@@ -1,0 +1,78 @@
+:root {
+    --bg-1: #050505;
+    --bg-2: #111;
+    --bg-3: #222;
+    --fg: #EEE;
+    --fg-1: #AAA;
+    --fg-2: #777;
+    --primary: #45F;
+    --secondary: #8ea;
+    --teritary: #8ae;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg-1);
+    color: var(--fg);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--secondary);
+}
+
+.button {
+    display: block;
+    padding: .5rem;
+    background: var(--bg-2);
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    text-decoration: none;
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.button:active {
+    text-decoration: underline;
+}
+
+.color {
+    color: var(--secondary);
+}
+
+.disabled {
+    color: var(--fg-2);
+    user-select: none;
+    cursor: not-allowed;
+}
+
+input {
+    padding: .2rem;
+    appearance: none;
+    background-color: var(--bg-2);
+    border: 1px solid var(--bg-3);
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: 2px solid var(--primary);
+}

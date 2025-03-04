@@ -1,0 +1,82 @@
+/* VARIABLES */
+
+.header {
+    padding: .5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__btn {
+    flex-shrink: 0;
+}
+
+.header__title {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.content-container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--bg-3);
+    border-radius: 4px;
+}
+
+.buy, .product {
+    min-height: 30vh;
+    padding: 3%;
+	margin: 2%;
+	background: var(--bg-2);
+	border-radius: 10px;
+}
+
+.buy {
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buy__fullname,
+.buy__card {
+    margin: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  nevermind */
+.buy__fullname  > label,
+.buy__card      > label {
+    padding-right: 2rem;
+}
+
+.buy__fullname  > input,
+.buy__card      > input {
+    flex-grow: 1;
+    max-width: 20rem;
+}
+
+.buy__btn {
+    width: 30%;
+    max-width: 5rem;
+    margin: 0 auto;
+}
+
+.buy__btn:hover {
+    color: #C22;
+}
+
+.product__cost {
+    padding: 1rem;
+}
+
+.product__money {
+    display: flex;
+    justify-content: space-evenly;
+}

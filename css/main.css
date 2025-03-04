@@ -1,0 +1,106 @@
+/* VARIABLES */
+:root {
+    --bg-1: #000;
+    --bg-2: #0A0A0A;
+    --bg-3: #1F1F1F;
+    --fg: #EEE;
+    --fg-1: #AAA;
+    --fg-2: #777;
+    --primary: #787;
+    --secondary: #446;
+    --teritary: #886;
+    --font-1: "Noto Sans", sans-serif;
+    --font-2: "Ubuntu Mono", "Courier New", monospace;
+}
+
+@media (prefers-contrast: more) {
+    :root {
+        --fg: #EEE;
+        --fg-1: #CCC;
+        --fg-2: #AAA;
+        --primary: #797;
+        --secondary: #336;
+        --teritary: #BB9;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    :root {
+        --bg-1: #222;
+        --bg-2: #333;
+        --bg-3: #444;
+        --fg: #DDD;
+        --fg-1: #BBB;
+        --fg-2: #AAA;
+        --primary: #9A9;
+        --secondary: #556;
+        --teritary: #AA9;
+    }
+}
+
+body {
+    /* Compatibility  */
+    color: #EEE;
+    background: #222;
+
+    color: var(--fg);
+    background: var(--bg-1);
+    font-family: var(--font-1);
+	scrollbar-color: var(--fg-2) var(--bg-2);
+}
+
+a {
+    color: var(--primary);
+    padding: 0.2rem;
+}
+
+a:hover,
+a:focus,
+a:active{
+    color: var(--teritary);
+    text-decoration: underline;
+}
+
+.button {
+    display: block;
+    padding: 0.4rem .8rem;
+    text-align: center;
+    border-radius: 4px;
+    background: var(--bg-3);
+    font-weight: 700;
+    transition: background 0.2s linear;
+}
+
+@media (prefers-reduced-motion){
+	.button {
+		transition: none;
+	}
+}
+
+.button--focus {
+    background: var(--bg-3);
+    outline: 1px solid var(--fg-2);
+}
+
+.button--focus:hover,
+.button--focus:focus,
+.button--focus:active {
+    color: var(--fg);
+    background: var(--secondary);
+    outline-color: var(--primary);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--fg-2);
+    border-radius: 2px;
+    cursor: grab;
+}

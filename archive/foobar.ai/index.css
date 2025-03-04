@@ -1,0 +1,181 @@
+.color {
+	color: var(--secondary);
+	padding: 0;
+}
+
+.header__links {
+    display: flex;
+    gap: .8rem;
+    margin: 0 1rem;
+}
+
+.hero {
+    background: #999;
+}
+
+.hero__container {
+	display: inline-block;
+	padding: 1rem;
+	background: #2C2C32;
+	border-radius: 1rem;
+}
+
+.hero__title {
+    font-size: 2rem;
+}
+
+.hero__txt {
+    margin: 1rem 0;
+}
+
+.hero__btn {
+    width: fit-content;
+    margin-left: auto;
+}
+
+.cards {
+	display: flex;
+    margin-top: 1rem;
+}
+
+.card {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 40%;
+    min-width: 300px;
+    padding: 1.5rem;
+    margin: 0 .2rem;
+    background: var(--bg-3);
+    border-radius: .5rem;
+}
+
+.card__title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.card__txt {
+    color: var(--text-grayed);
+}
+
+.solutions {
+    padding: 3rem .4rem;
+}
+
+.solutions__title {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.solutions__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 1rem;
+}
+
+.solution {
+    margin: .5rem;
+    padding: .5rem;
+    background: var(--bg-2);
+    border: 2px solid var(--bg-3);
+    border-radius: 4px;
+}
+
+.solution--pro {
+    border-color: var(--secondary);
+}
+
+.solution__name {
+    margin: .5rem 0 1rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.solution__name--pro {
+    color: var(--secondary);
+}
+
+.features {
+    line-height: 1.5;
+    margin: 0 0 3% 3%;
+    font-size: 1.5rem;
+}
+
+.feature {
+    color: var(--fg-2);
+}
+
+.feature--yes {
+    color: var(--secondary);
+}
+
+.solution__btn {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.solution__btn--free:hover {
+    color: #B00;
+    border-color: #B00;
+}
+
+.solution__btn--pro {
+    color: var(--secondary);
+}
+
+.integrations {
+    background: var(--bg-2);
+}
+
+.integrations__title  {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.integrations__list {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3vh;
+}
+
+.integration {
+    font-size: 1.5rem;
+	text-align: center;
+}
+
+.integrations__btn {
+    width: fit-content;
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 515px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .integrations__list {
+		padding: 2rem 0;
+		background: var(--bg-1);
+		border-radius: 8px;
+	}
+
+	.integration {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 490px) {
+    .header__links {
+        padding: .1rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .3rem;
+    }
+}
